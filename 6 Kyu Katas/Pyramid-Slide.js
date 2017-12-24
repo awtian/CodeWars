@@ -36,7 +36,7 @@ function longestSlideDown (pyramid) {
             pyramidSum[i][j] = pyramid[i][j] + Math.max(pyramidSum[i+1][j], pyramidSum[i+1][j+1]);
         }
     }
-    console.log(pyramidSum);
+    return pyramidSum;
   }
 
   console.log(longestSlideDown(
