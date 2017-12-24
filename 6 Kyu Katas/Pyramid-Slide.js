@@ -39,6 +39,25 @@ function longestSlideDown (pyramid) {
     return pyramidSum;
   }
 
+  //CODEWARS SOLUTION 
+//   brianpck - understandable
+// function longestSlideDown (pyramid) {
+//     for (var i = pyramid.length - 2; i > -1; i--) {
+//       for (var j = 0; j < pyramid[i].length; j++) {
+//         pyramid[i][j] += Math.max(pyramid[i + 1][j], pyramid[i + 1][j + 1]);
+//       }
+//     }
+//     return pyramid[0][0];
+//   }
+
+// perkee, dubdjon!, pompeu2004 -- right now not understandable
+// function longestSlideDown (pyramid) {
+//   return pyramid.reduceRight((last,current)=>current.map(
+//     (v,i)=>v+Math.max(last[i],last[i+1])
+//   ))[0];
+// }
+
+
   console.log(longestSlideDown(
     [[3],
      [7, 4],
